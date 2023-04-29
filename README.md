@@ -1,4 +1,6 @@
 # Tool-Tip Using React
+Deployed URL: https://pc20.github.io/Tool-tip-using-react/
+
 This project consist of a React component Tool-Tip, which is nothing but a pop up screens that displays detail information on hovering over a prticular area.\
 Four buttons are provided which let you position tool-tip accordingly, i.e. TOP, RIGHT,BOTTOM,LEFT \
 ![tt](https://user-images.githubusercontent.com/23145241/235319588-2b4201a8-9784-48fe-955e-00f6594998a5.PNG)
