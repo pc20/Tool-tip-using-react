@@ -1,0 +1,46 @@
+:root {
+  --show-top: white;
+  --show-bottom: white;
+  --show-left: white;
+  --show-right: white;
+  --top-pos: 35%;
+  --left-pos: -10%;
+}
+.ToolTip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  font-size: larger;
+}
+
+.toolTipText {
+  margin: 10px;
+  padding: 10px;
+  visibility: hidden;
+  background-color: black;
+  text-align: center;
+  border-radius: 15px;
+  color: whitesmoke;
+  text-decoration: none;
+  position: absolute;
+  z-index: 100;
+  width: 120px;
+  font-size: small;
+}
+
+.ToolTip:hover .toolTipText {
+  visibility: visible;
+}
+
+.toolTipText::before {
+  content: "";
+  position: absolute;
+  top: var(--top-pos);
+  left: var(--left-pos);
+  z-index: 1;
+  border: solid 8px transparent;
+  border-top-color: var(--show-top);
+  border-bottom-color: var(--show-bottom);
+  border-left-color: var(--show-left);
+  border-right-color: var(--show-right);
+}
